@@ -1,4 +1,4 @@
-const apiKey = "https://api.rawg.io/api/games?key=YOUR_API_KEY";
+const apiKey = "61b24a5e38ee4c21ac18e71e76fccbcd";
 const gamesContainer = document.getElementById("gamesContainer");
 const searchInput = document.getElementById("searchInput");
 const toggleTheme = document.getElementById("toggleTheme");
@@ -6,8 +6,8 @@ const toggleTheme = document.getElementById("toggleTheme");
 // Buscar jogos populares
 async function fetchGames(query = "") {
   const url = query
-    ? `https://api.rawg.io/api/games?search=${query}&page_size=12&key=YOUR_API_KEY`
-    : `https://api.rawg.io/api/games?ordering=-rating&page_size=12&key=YOUR_API_KEY`;
+    ? `https://api.rawg.io/api/games?search=${query}&page_size=12&key=61b24a5e38ee4c21ac18e71e76fccbcd`
+    : `https://api.rawg.io/api/games?ordering=-rating&page_size=12&key=61b24a5e38ee4c21ac18e71e76fccbcd`;
 
   const res = await fetch(url);
   const data = await res.json();
